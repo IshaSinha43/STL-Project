@@ -50,7 +50,7 @@ namespace TASKVECTOR {
 		vector<EmployeeInfo*>List;
 
 		void Add(EmployeeInfo* add) {
-			List.push_back();
+			List.push_back(add);
 
 		}
 		void pop(EmployeeInfo* pop) {
@@ -60,9 +60,10 @@ namespace TASKVECTOR {
 		void  at(EmployeeInfo* at) {
 			List.at(int x);
 		}
-		void Rev(EmployeeInfo* rev)
+		void Rev()
 		{
 			List.reverse();
+		}
 		void clear(EmployeeInfo* clear) {
 			List.clear();
 		}
@@ -76,7 +77,7 @@ namespace TASKVECTOR {
 		
 		~Vector();
 
-		EmployeeInfo* tempInfo = new Info();
+		
 	};
 	
 

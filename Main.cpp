@@ -11,18 +11,20 @@ int main()
 	////PAIR::PrintPairClass();
 	////LIST::PrintList();
 	
-	Vector V1;
-	V1.Add(EmployeeInfo);
-	V1.at(EmployeeInfo);
-	V1.clear(EmployeeInfo);
-	V1.pop(EmployeeInfo);
+	TASKVECTOR:: Vector V1;
+	//V1.Add(EmployeeInfo);
+	//V1.at(EmployeeInfo);
+	//V1.clear(EmployeeInfo);
+	TASKVECTOR::EmployeeInfo* tempInfo = new TASKVECTOR::EmployeeInfo();
+	V1.Add();
+	V1.pop();
 
 	
 	V1.Size();
-	V1.Add(tempInfo);
 	
-	Vector V1 = V;
-	V1.Size();
+	
+	TASKVECTOR::Vector V = V1;
+	V.Size();
 
 	return 0;
 }
