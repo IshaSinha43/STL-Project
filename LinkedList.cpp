@@ -3,6 +3,7 @@
 void LIST::PrintList()
 {
 
+	//pushback()
 	list<int>l1{11,66, 22,55, 33,66,99};
 	l1.push_back(44);
 
@@ -10,11 +11,13 @@ void LIST::PrintList()
 	for (auto it = l1.begin(); it != l1.end(); it++)
 		cout << *it << " ";
 	
-	
+	//pop front()
 	l1.pop_front();
 	for (auto it = l1.begin(); it != l1.end(); it++)
 		cout <<"\n" << *it << " ";
 
+
+	//sort()
 	l1.sort();
 	list <int>::iterator it1 = l1.begin();
 	cout << "\nsorting elements are:";
@@ -27,7 +30,7 @@ void LIST::PrintList()
 	cout << endl;
 
 
-
+	//reverse();
 	l1.reverse();
 	cout << "\nReverse elements are:";
 	list<int>::iterator it4 = l1.begin();
@@ -51,7 +54,7 @@ void LIST::PrintList()
 
 
 
-	
+	//remove()
 
 	l2.remove("mumbai");
 	list <string>::iterator it3 = l2.begin();
@@ -65,8 +68,7 @@ void LIST::PrintList()
 
 
 	cout << endl;
-
-
+	//clear()
 	l2.clear();
 	cout << "All element arte deleted ";
 	list <string>::iterator it5 = l2.begin();

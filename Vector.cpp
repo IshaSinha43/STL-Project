@@ -52,7 +52,7 @@ cout  << *it << " ";
 cout << "current capacity :" << v.capacity() << endl;
 
 
-
+//pop bcak()
 v.pop_back();
 cout << "Array element after pop back:";
 for (auto it = v.begin(); it != v.end(); it++)
@@ -77,7 +77,7 @@ cout << *it << " ";
 return 0;
 }
 
-
+//pair
 void PAIR::PrintPairClass()
 {
 Student student;
@@ -103,5 +103,28 @@ cout << p4.first << " " << p4.second << endl;
 cout << (p5.second).getData() << endl;
 
 }
+
+
+
+
+TASKVECTOR::Vector::Vector()
+{
+	
+}
+
+TASKVECTOR::Vector::Vector(const Vector& obj)
+{
+	obj.List;
+}
+
+TASKVECTOR ::Vector::~Vector()
+{
+	List.clear();
+
+}
+
+
+
+	
 
 

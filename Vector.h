@@ -1,8 +1,7 @@
 #pragma once
 #include<iostream>
 #include<vector>
-
-using namespace std; 
+using namespace std;
 namespace VECTOR
 {
 int Vector();
@@ -23,11 +22,62 @@ namespace PAIR
 		}
 		int getData()
 		{
-			cout << "Name is: " << name << endl;
+			cout<< "Name is: " << name << endl;
 			cout << "Age is: " << age << endl;
 			return 0;
 		}
 		
 	};
 	void PrintPairClass();
+}
+namespace TASKVECTOR {
+
+
+	class EmployeeInfo
+	{
+	public:
+		int EmpId;
+		string EmpName;
+		string Addr;
+	
+	};
+
+	class Vector{
+	
+		
+	public:
+		Vector();
+		vector<EmployeeInfo*>List;
+
+		void Add(EmployeeInfo* add) {
+			List.push_back();
+
+		}
+		void pop(EmployeeInfo* pop) {
+			List.pop_back();
+
+		}
+		void  at(EmployeeInfo* at) {
+			List.at(int x);
+		}
+		void Rev(EmployeeInfo* rev)
+		{
+			List.reverse();
+		void clear(EmployeeInfo* clear) {
+			List.clear();
+		}
+		void Size()
+		{
+			
+			cout << "Size is: " << List.size() << endl;
+		}
+	
+		Vector(const Vector& obj);
+		
+		~Vector();
+
+		EmployeeInfo* tempInfo = new Info();
+	};
+	
+
 }
